@@ -1,13 +1,10 @@
-.about {
+.page-header {
+  margin-top: 150px;
   margin-left: 300px;
 }
 
-p {
-  margin-right: 100px;
-}
-
-.page-header {
-  margin-top: 150px;
+.title {
+  font-size: 30px;
 }
 
 .line {
@@ -16,8 +13,4 @@ p {
   opacity: 0.3;
   margin-right: 100px;
   margin-bottom: 20px;
-}
-
-.title {
-  font-size: 30px;
 }

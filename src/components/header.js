@@ -6,9 +6,9 @@ function Header() {
     <div className="leftColumn">
       <h1>Hardy Izard</h1>
       <div className="links">
-      <p>Sculpture</p>
+      <p onClick={props.onClick}>Sculpture</p>
       <p>Videos</p>
-      <p>About</p>
+      <p onClick={props.onClick}>About</p>
       <SiInstagram className="instagram"/>
       </div>
     </div>
