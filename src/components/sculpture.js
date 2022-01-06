@@ -8,7 +8,7 @@ import '../css/sculpture.css'
 function Sculpture(){
   return (
     <div className="Sculpture">
-      <div className="sculpture-header">
+      <div className="page-header">
         <p className="title">Sculpture</p>
         <div className="line"/>
       </div>
