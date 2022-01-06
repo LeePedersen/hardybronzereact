@@ -4,7 +4,6 @@ import './css/index.css';
 import App from './App';
 import Sculpture from './components/sculpture';
 import About from './components/about';
-import reportWebVitals from './reportWebVitals';
 
 function ShowPage(props) {
   const whichPage = props.whichPage;
@@ -15,16 +14,37 @@ function ShowPage(props) {
   }
 }
 
+class PageControl extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleSculptureClick = this.handleSculptureClick.bind(this);
+    this.handleAboutClick = this.handleAboutClick.bind(this);
+    this.state = {whichPage: "sculpture"};
+  }
+  handleSculptureClick() {
+    this.setState({whichPage: "sculpture"});
+  }
+  handleAboutClick() {
+    this.setState({whichPage: "about"});
+  }
+  render() {
+    const whichPage = this.state.whichPage;
+    if (whichPage === "sculpture") {
+      return(
+        <ShowPage whichPage={"sculpture"} />
+      )
+    } else if (whichPage === "about") {
+      return(
+        <ShowPage whichPage={"about"} />
+      )
+    }
+  }
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <ShowPage whichPage={"about"}/>
+    <PageControl />
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

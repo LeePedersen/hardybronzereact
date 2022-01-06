@@ -5,19 +5,3 @@
 p {
   margin-right: 100px;
 }
-
-.page-header {
-  margin-top: 150px;
-}
-
-.line {
-  height: 1px;
-  background: grey;
-  opacity: 0.3;
-  margin-right: 100px;
-  margin-bottom: 20px;
-}
-
-.title {
-  font-size: 30px;
-}
