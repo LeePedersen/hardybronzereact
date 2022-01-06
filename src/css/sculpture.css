@@ -1,0 +1,24 @@
+.Sculpture {
+  margin-left: 300px;
+}
+
+img {
+  width: 500px;
+  /* margin: 10px; */
+}
+
+.sculpture-header {
+  margin-top: 150px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.line {
+  height: 1px;
+  background: grey;
+  opacity: 0.3;
+  margin-right: 100px;
+  margin-bottom: 20px;
+}
