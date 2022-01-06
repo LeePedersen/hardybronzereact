@@ -4,13 +4,24 @@ import './css/index.css';
 import App from './App';
 import Sculpture from './components/sculpture';
 import About from './components/about';
+import Header from './components/header';
+import Video from './components/video';
+
+import { SiInstagram } from "react-icons/si";
+
 
 function ShowPage(props) {
   const whichPage = props.whichPage;
-  if (whichPage == "sculpture") {
+  if (whichPage === "sculpture") {
     return <Sculpture />;
   } else if (whichPage === "about") {
     return <About />;
+  } else if (whichPage === "video") {
+    return <Video />;
+  } else {
+    return(
+      <p>error</p>
+    )
   }
 }
 
@@ -18,24 +29,63 @@ class PageControl extends React.Component {
   constructor(props) {
     super(props);
     this.handleSculptureClick = this.handleSculptureClick.bind(this);
+    this.handleVideoClick = this.handleVideoClick.bind(this);
     this.handleAboutClick = this.handleAboutClick.bind(this);
-    this.state = {whichPage: "sculpture"};
+    this.state = {whichPage: "video"};
   }
+
   handleSculptureClick() {
     this.setState({whichPage: "sculpture"});
   }
+
   handleAboutClick() {
     this.setState({whichPage: "about"});
   }
+
+  handleVideoClick() {
+    this.setState({whichPage: "video"});
+  }
+
   render() {
     const whichPage = this.state.whichPage;
     if (whichPage === "sculpture") {
       return(
-        <ShowPage whichPage={"sculpture"} />
+        <div>
+          <div className="leftColumn">
+            <h1>Hardy Izard</h1>
+            <p onClick={() => this.handleSculptureClick()} className="greyed">Sculpture</p>
+            <p onClick={() => this.handleVideoClick()}>Videos</p>
+            <p onClick={() => this.handleAboutClick()}>About</p>
+            <SiInstagram className="instagram"/>
+          </div>
+          <ShowPage whichPage={"sculpture"} />
+        </div>
       )
     } else if (whichPage === "about") {
       return(
-        <ShowPage whichPage={"about"} />
+        <div>
+          <div className="leftColumn">
+            <h1>Hardy Izard</h1>
+            <p onClick={() => this.handleSculptureClick()}>Sculpture</p>
+            <p onClick={() => this.handleVideoClick()}>Videos</p>
+            <p className="greyed" onClick={() => this.handleAboutClick()}>About</p>
+            <SiInstagram className="instagram"/>
+          </div>
+          <ShowPage whichPage={"about"} />
+        </div>
+      )
+    } else if (whichPage === "video") {
+      return(
+        <div>
+          <div className="leftColumn">
+            <h1>Hardy Izard</h1>
+            <p onClick={() => this.handleSculptureClick()}>Sculpture</p>
+            <p className="greyed" onClick={() => this.handleVideoClick()}>Videos</p>
+            <p onClick={() => this.handleAboutClick()}>About</p>
+            <SiInstagram className="instagram"/>
+          </div>
+          <ShowPage whichPage={"video"} />
+        </div>
       )
     }
   }
@@ -43,7 +93,6 @@ class PageControl extends React.Component {
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
     <PageControl />
   </React.StrictMode>,
   document.getElementById('root')

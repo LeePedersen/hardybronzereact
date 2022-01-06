@@ -1,23 +1,23 @@
+import React, { useState } from "react";
 import '../css/header.css';
-import { SiInstagram } from "react-icons/si";
 
-function Header(props) {
-  function handleSculptureClick() {
-    console.log("clicked");
+
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    console.log(this.props)
+}
+  handleAboutClick() {
+    console.log("set state to about");
+    this.setState({whichPage: "about"});
   }
-  return(
-    <div className="leftColumn">
-      <h1>Hardy Izard</h1>
-      <div className="links">
-      <p onClick={handleSculptureClick}>Sculpture</p>
-      <p>Videos</p>
-      <p onClick={props.handleAboutClick}>About</p>
-      <SiInstagram className="instagram"/>
+  render() {
+    return (
+      <div className="leftColumn">
+        <h1>Hardy Izard</h1>
       </div>
-    </div>
-  )
+    )
+  }
 }
 
 export default Header;
-
- // onClick={props.onClick}
