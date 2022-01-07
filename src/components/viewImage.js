@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Image(props) {
+function ViewImage(props) {
   const image = props.image;
   return (
     <div>
@@ -9,4 +9,4 @@ function Image(props) {
   )
 }
 
-export default Image;
+export default ViewImage ;
