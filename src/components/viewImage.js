@@ -9,7 +9,8 @@ function ViewImage(props) {
   const image = props.location.state.staticContext;
   return (
     <div>
-      <img src={image} alt={image.toString()}/>
+      <img src={image.src} alt={image.alt}/>
+      <p>{image.description}</p>
     </div>
   )
 }

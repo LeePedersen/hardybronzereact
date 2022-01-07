@@ -10,32 +10,42 @@ import { Link } from 'react-router-dom';
 
 var imageList = [
   {
-    src: unsung
+    src: unsung,
+    alt: "unsung",
+    description: "this is a description of the image",
   },
   {
-    src: twoweekspay
+    src: twoweekspay,
+    alt: "two weeks pay",
+    description: "this is a description of the image",
   },
   {
-    src: coyoteskull2
+    src: coyoteskull2,
+    alt: "coyoteskull2",
+    description: "this is a description of the image",
   },
   {
-    src: coyoteskull3
+    src: coyoteskull3,
+    alt: "coyoteskull3",
+    description: "this is a description of the image",
+  },
+  {
+    src: coyoteskull1,
+    alt: "coyoteskull1",
+    description: "this is a description of the image",
   },
 
 ]
 
 function Sculpture() {
-  console.log(imageList[0].src);
+  console.log(imageList[0]);
   return (
     <div>
       <PageHeader title={"Sculpture"}/>
       <div className="Sculpture">
-      
-        <Link to={{ pathname: "viewImage", state: { staticContext: unsung }}}><img src={unsung} alt="unsung"/></Link>
-        <img src={twoweekspay} alt="twoweekspay"/>
-        <img src={coyoteskull2} alt="coyote skull"/>
-        <img src={coyoteskull3} alt="coyote skull"/>
-        <img src={coyoteskull1} alt="coyote skull"/>
+      {imageList.map((image, index) =>
+        <Link key={index} to={{ pathname: "viewImage", state: { staticContext: imageList[index] }}}><img src={imageList[index].src} alt={imageList[index].alt}/></Link>
+      )}
       </div>
     </div>
   )
