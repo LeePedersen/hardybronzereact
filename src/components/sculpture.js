@@ -38,7 +38,6 @@ var imageList = [
 ]
 
 function Sculpture() {
-  console.log(imageList[0]);
   return (
     <div>
       <PageHeader title={"Sculpture"}/>
