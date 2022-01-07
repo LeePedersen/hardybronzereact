@@ -1,23 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from 'react-router-dom';
 import '../css/header.css';
+import { SiInstagram } from "react-icons/si";
 
-
-class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    console.log(this.props)
-}
-  handleAboutClick() {
-    console.log("set state to about");
-    this.setState({whichPage: "about"});
-  }
-  render() {
-    return (
-      <div className="leftColumn">
-        <h1>Hardy Izard</h1>
-      </div>
-    )
-  }
+function Header() {
+  return (
+    <div className="leftColumn">
+      <h1>Hardy Izard</h1>
+      <Link className="link" to="/">Sculpture</Link><br/>
+      <Link className="link" to="About">About</Link><br/>
+      <Link className="link" to="Video">Videos</Link>
+      <SiInstagram className="instagram"/>
+    </div>
+  );
 }
 
 export default Header;
