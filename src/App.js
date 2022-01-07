@@ -4,6 +4,7 @@ import Sculpture from './components/sculpture';
 import About from './components/about';
 import Video from './components/video';
 import Header from './components/header';
+import ViewImage from './components/viewImage';
 import Error404 from './components/Error404';
 import { Switch, Route } from 'react-router-dom';
 
@@ -14,7 +15,8 @@ function App() {
       <Switch>
         <Route exact path='/' component={Sculpture} />
         <Route path='/about' component={About} />
-        <Route path='/videos' component={Video} />
+        <Route path='/video' component={Video} />
+        <Route path='/viewImage' component={ViewImage} />
         <Route component={Error404} />
       </Switch>
     </div>

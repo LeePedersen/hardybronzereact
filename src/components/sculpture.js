@@ -6,20 +6,32 @@ import twoweekspay from '../img/2weekspay.jpeg';
 import '../css/sculpture.css'
 import PageHeader from './page-header.js';
 import ViewImage from './viewImage.js';
+import { Link } from 'react-router-dom';
 
 var imageList = [
   {
-    src: {unsung},
-    name: "Unsung"
-  }
+    src: unsung
+  },
+  {
+    src: twoweekspay
+  },
+  {
+    src: coyoteskull2
+  },
+  {
+    src: coyoteskull3
+  },
+
 ]
 
 function Sculpture() {
+  console.log(imageList[0].src);
   return (
     <div>
       <PageHeader title={"Sculpture"}/>
       <div className="Sculpture">
-        <img src={unsung} alt="unsung"/>
+      
+        <Link to={{ pathname: "viewImage", state: { staticContext: unsung }}}><img src={unsung} alt="unsung"/></Link>
         <img src={twoweekspay} alt="twoweekspay"/>
         <img src={coyoteskull2} alt="coyote skull"/>
         <img src={coyoteskull3} alt="coyote skull"/>
