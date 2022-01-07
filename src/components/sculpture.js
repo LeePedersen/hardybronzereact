@@ -5,6 +5,7 @@ import coyoteskull3 from '../img/coyoteskull3.jpeg';
 import twoweekspay from '../img/2weekspay.jpeg';
 import '../css/sculpture.css'
 import PageHeader from './page-header.js';
+import Image from './image.js';
 
 function Sculpture() {
   return (

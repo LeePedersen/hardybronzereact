@@ -6,6 +6,7 @@ import Sculpture from './components/sculpture';
 import About from './components/about';
 import Header from './components/header';
 import Video from './components/video';
+import { Switch, Route } from 'react-router-dom';
 
 import { SiInstagram } from "react-icons/si";
 
@@ -31,7 +32,7 @@ class PageControl extends React.Component {
     this.handleSculptureClick = this.handleSculptureClick.bind(this);
     this.handleVideoClick = this.handleVideoClick.bind(this);
     this.handleAboutClick = this.handleAboutClick.bind(this);
-    this.state = {whichPage: "video"};
+    this.state = {whichPage: "sculpture"};
   }
 
   handleSculptureClick() {
