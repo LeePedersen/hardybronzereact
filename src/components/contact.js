@@ -1,10 +1,14 @@
 import React from "react";
+import PageHeader from './page-header'
+import '../css/contact.css';
+
 
 function Contact() {
   return (
-    <div>
-      <p>Email me at lkfdsajlkjfdsalkfjda</p>
-    </div>
+    <>
+      <PageHeader title={"Contact"} />
+      <p className="contactInfo">Email me at lkfdsajlkjfdsalkfjda</p>
+    </>
   );
 }
 

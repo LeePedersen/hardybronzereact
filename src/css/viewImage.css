@@ -1,7 +1,22 @@
 .imageContainer {
-  margin-left: 200px;
+  margin-left: 300px;
+  margin-top: 100px;
+  display: flex;
 }
 
 .image {
   height: 100%;
+}
+
+.column {
+  flex: 50%;
+}
+
+.column2 {
+  flex: 50%;
+  margin-left: 20px;
+  margin-top: -23px;
+}
+
+.description {
 }

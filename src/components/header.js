@@ -7,11 +7,11 @@ function Header() {
   return (
     <div className="leftColumn">
       <h1>Hardy Izard</h1>
-      <Link className="link" to="/">Sculpture</Link><br/><br/>
-      <Link className="link" to="About">About</Link><br/><br/>
-      <Link className="link" to="Video">Videos</Link><br/><br/>
-      <Link className="link" to="Contact">Contact</Link><br/>
-      <SiInstagram className="instagram"/>
+      <p><Link to="/">Sculpture</Link></p>
+      <p><Link to="About">About</Link></p>
+      <p><Link to="Video">Videos</Link></p>
+      <p><Link to="Contact">Contact</Link></p>
+      <p><SiInstagram className="instagram"/></p>
     </div>
   );
 }
