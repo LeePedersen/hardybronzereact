@@ -1,5 +1,17 @@
 .sidebar {
   max-width: 180px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   float: right;
+}
+
+.menuList {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nameHeader {
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.menuIcon {
+  padding-right: 20px;
 }

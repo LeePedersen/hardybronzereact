@@ -5,7 +5,7 @@ import { SiInstagram } from "react-icons/si";
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import { FiMenu } from "react-icons/fi";
+import MenuIcon from "./menuIcon";
 
 class Menu extends React.Component {
 
@@ -25,7 +25,6 @@ class Menu extends React.Component {
   }
 
   render() {
-    console.log(this.state.menuVisible);
     const links = [
       {
         name: "sculpture",
@@ -55,18 +54,22 @@ class Menu extends React.Component {
         <h1 className="nameHeader">Hardy Izard</h1>
         <div className="sidebar" onClick={() => this.toggleMenu()}>
           {this.state.menuVisible ?
-            <List disablePadding dense>
-              {links.map(({ label, name, linkTo, ...rest }) => (
-                <ListItem key={name} button {...rest}>
-                <Link to={linkTo}><ListItemText>{label}</ListItemText></Link>
+            <div className="menuList">
+              <List disablePadding dense>
+                {links.map(({ label, name, linkTo, ...rest }) => (
+                  <ListItem key={name} button {...rest}>
+                  <Link to={linkTo}><ListItemText>{label}</ListItemText></Link>
+                  </ListItem>
+                ))}
+                <ListItem button>
+                  <ListItemText><SiInstagram/></ListItemText>
                 </ListItem>
-              ))}
-              <ListItem button>
-              <ListItemText><SiInstagram/></ListItemText>
-            </ListItem>
-            </List>
+              </List>
+            </div>
             :
-            <FiMenu />
+            <div className="menuIcon">
+              <MenuIcon />
+            </div>
           }
         </div>
       </div>

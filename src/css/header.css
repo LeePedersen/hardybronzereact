@@ -1,48 +1,22 @@
-a {
+
+.header {
+  position: fixed;
+  width: 200px;
+  top: 0;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+.instagram {
+  margin-top: 30px;
+}
+
+.headerLink {
+  margin-top: 30px;
   text-decoration: none;
   color: black;
 }
 
-@media only screen and (max-width: 768px) {
-
-  .leftColumn {
-    position: fixed;
-    /* display: table-cell; */
-    margin-top: 20px;
-
-  }
-
-  p {
-    display: table-cell;
-    padding-right: 20px;
-  }
-
-  .nameHeader {
-    font-size: 25px;
-  }
-
-}
-
-
-@media only screen and (min-width: 768px) {
-
-  .leftColumn {
-    position: fixed;
-    width: 200px;
-    top: 0;
-    margin-top: 50px;
-    margin-left: 40px;
-  }
-
-  .instagram {
-    margin-top: 30px;
-  }
-
-  a {
-    margin-top: 30px;
-  }
-
-  .greyed {
-    opacity: 0.7;
-  }
+.greyed {
+  opacity: 0.7;
 }

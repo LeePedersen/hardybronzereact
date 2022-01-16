@@ -37,7 +37,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.useMenu);
     return (
       <div className="background">
         {this.state.useMenu ? <Menu /> : <Header />}
