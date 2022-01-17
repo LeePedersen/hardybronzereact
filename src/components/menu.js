@@ -4,8 +4,8 @@ import '../css/menu.css';
 import { SiInstagram } from "react-icons/si";
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 import MenuIcon from "./menuIcon";
+import { menuLinks } from '../constants/menuLinks';
 
 class Menu extends React.Component {
 
@@ -17,6 +17,7 @@ class Menu extends React.Component {
   }
 
   toggleMenu() {
+    // toggle menu on click
     if (this.state.menuVisible) {
       this.setState({menuVisible: false})
     } else {
@@ -25,30 +26,8 @@ class Menu extends React.Component {
   }
 
   render() {
-    const links = [
-      {
-        name: "sculpture",
-        label: "Sculpture",
-        linkTo: "/",
-      },
-      {
-        name: "about",
-        label: "About",
-        linkTo: "About",
-      },
-      {
-        name: "contact",
-        label: "Contact",
-        linkTo: "Contact",
-      },
-      {
-        name: "videos",
-        label: "Videos",
-        linkTo: "Video",
-      },
-    ]
-
     // button makes ripple effect
+    // if menu is visible, return map of images, else return the menu icon component
     return (
       <div className="menu">
         <h1 className="menuNameHeader">Hardy Izard</h1>
@@ -56,7 +35,7 @@ class Menu extends React.Component {
           {this.state.menuVisible ?
             <div className="menuList">
               <List disablePadding dense>
-                {links.map(({ label, name, linkTo, ...rest }) => (
+                {menuLinks.map(({ label, name, linkTo, ...rest }) => (
                   <ListItem key={name} {...rest}>
                   <Link to={linkTo}><p className="labelText">{label}</p></Link>
                   </ListItem>
