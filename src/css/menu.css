@@ -1,9 +1,9 @@
 .sidebar {
-  max-width: 180px;
+  max-width: 300px;
   /* float: right; */
   position: absolute;
   right: 10px;
-  top: 20px;
+  top: 30px;
   z-index: 1;
 }
 
@@ -15,13 +15,20 @@
 .menuNameHeader {
   margin-top: 20px;
   margin-left: 20px;
-  font-size: 30px;
-  width: 200px;
+  font-size: 37px;
+  width: 300px;
   top: 0px;
 
 }
 
 .menuIcon {
   margin-right: 20px;
+  margin-top: 10px;
+}
 
+.labelText {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-right: 15px;
+  font-size: 25px;
 }

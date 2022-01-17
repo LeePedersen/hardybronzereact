@@ -19,4 +19,4 @@ function ViewImage(props) {
   )
 }
 
-export default ViewImage ;
+export default ViewImage;

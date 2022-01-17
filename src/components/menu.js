@@ -57,12 +57,12 @@ class Menu extends React.Component {
             <div className="menuList">
               <List disablePadding dense>
                 {links.map(({ label, name, linkTo, ...rest }) => (
-                  <ListItem key={name} button {...rest}>
-                  <Link to={linkTo}><ListItemText>{label}</ListItemText></Link>
+                  <ListItem key={name} {...rest}>
+                  <Link to={linkTo}><p className="labelText">{label}</p></Link>
                   </ListItem>
                 ))}
-                <ListItem button>
-                  <ListItemText><SiInstagram/></ListItemText>
+                <ListItem>
+                  <p className="labelText"><SiInstagram/></p>
                 </ListItem>
               </List>
             </div>
