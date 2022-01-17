@@ -51,7 +51,7 @@ class Menu extends React.Component {
     // button makes ripple effect
     return (
       <div className="menu">
-        <h1 className="nameHeader">Hardy Izard</h1>
+        <h1 className="menuNameHeader">Hardy Izard</h1>
         <div className="sidebar" onClick={() => this.toggleMenu()}>
           {this.state.menuVisible ?
             <div className="menuList">

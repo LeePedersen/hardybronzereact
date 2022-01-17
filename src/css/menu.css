@@ -1,17 +1,27 @@
 .sidebar {
   max-width: 180px;
-  float: right;
+  /* float: right; */
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  z-index: 1;
 }
 
 .menuList {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
-.nameHeader {
+.menuNameHeader {
+  margin-top: 20px;
   margin-left: 20px;
   font-size: 30px;
+  width: 200px;
+  top: 0px;
+
 }
 
 .menuIcon {
-  padding-right: 20px;
+  margin-right: 20px;
+
 }
