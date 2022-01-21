@@ -31,22 +31,23 @@ class Menu extends React.Component {
     return (
       <div className="menu">
         <h1 className="menuNameHeader">Hardy Izard</h1>
-        <div className="sidebar" onClick={() => this.toggleMenu()}>
+        <div className="sidebar">
           {this.state.menuVisible ?
             <div className="menuList">
-              <List disablePadding dense>
+              <List disablePadding onClick={() => this.toggleMenu()}>
                 {menuLinks.map(({ label, name, linkTo, ...rest }) => (
                   <ListItem key={name} {...rest}>
-                  <Link to={linkTo}><p className="labelText">{label}</p></Link>
+                  <Link className="link" to={linkTo}><p className="labelText">{label}</p></Link>
                   </ListItem>
                 ))}
                 <ListItem>
                   <p className="labelText"><SiInstagram/></p>
                 </ListItem>
               </List>
+              <p className="x" onClick={() => this.toggleMenu()}>x</p>
             </div>
             :
-            <div className="menuIcon">
+            <div className="menuIcon" onClick={() => this.toggleMenu()}>
               <MenuIcon />
             </div>
           }
