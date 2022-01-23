@@ -44,7 +44,7 @@ class Menu extends React.Component {
                   <p className="labelText"><SiInstagram/></p>
                 </ListItem>
               </List>
-              <p className="x" onClick={() => this.toggleMenu()}>x</p>
+              <p className="x" onClick={() => this.toggleMenu()}>X</p>
             </div>
             :
             <div className="menuIcon" onClick={() => this.toggleMenu()}>
