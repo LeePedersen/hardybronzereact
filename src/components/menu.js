@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from 'react-router-dom';
 import '../css/menu.css';
 import { SiInstagram } from "react-icons/si";
@@ -31,27 +31,25 @@ class Menu extends React.Component {
     return (
       <div className="menu">
         <h1 className="menuNameHeader">Hardy Izard</h1>
-        <div className="sidebar">
-          {this.state.menuVisible ?
-            <div className="menuList">
-              <List disablePadding onClick={() => this.toggleMenu()}>
-                {menuLinks.map(({ label, name, linkTo, ...rest }) => (
-                  <ListItem key={name} {...rest}>
-                  <Link className="link" to={linkTo}><p className="labelText">{label}</p></Link>
-                  </ListItem>
-                ))}
-                <ListItem>
-                  <p className="labelText"><SiInstagram/></p>
+        {this.state.menuVisible ?
+          <div className="menuList">
+            <List disablePadding onClick={() => this.toggleMenu()}>
+              {menuLinks.map(({ label, name, linkTo, ...rest }) => (
+                <ListItem key={name} {...rest}>
+                <Link className="link" to={linkTo}><p className="labelText">{label}</p></Link>
                 </ListItem>
-              </List>
-              <p className="x" onClick={() => this.toggleMenu()}>X</p>
-            </div>
-            :
-            <div className="menuIcon" onClick={() => this.toggleMenu()}>
-              <MenuIcon />
-            </div>
-          }
-        </div>
+              ))}
+              <ListItem>
+                <p className="labelText"><SiInstagram/></p>
+              </ListItem>
+            </List>
+            <p className="x" onClick={() => this.toggleMenu()}>X</p>
+          </div>
+          :
+          <div className="menuIcon" onClick={() => this.toggleMenu()}>
+            <MenuIcon />
+          </div>
+        }
       </div>
     );
   }

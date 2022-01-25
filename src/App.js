@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './css/App.css';
 import Header from './components/header';
 import Menu from './components/menu';
@@ -26,7 +26,6 @@ class App extends React.Component {
 
   resize() {
     const currentUseMenu = (window.innerWidth <= 768);
-    const currentUseHeader = (window.innerWidth >= 768);
     if (currentUseMenu !== this.state.useMenu) {
       this.setState({useMenu: currentUseMenu});
     }

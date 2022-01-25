@@ -8,6 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Technologies/Versions
 * `React` version 17.0.2
 * `CSS`
+* `HTML`
 
 ## Known Bugs
 * images are old and not styled well yet
