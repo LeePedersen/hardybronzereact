@@ -6,6 +6,12 @@
   }
 }
 
+img {
+  /* border: 1px solid black; */
+  margin-left: -50px;
+  margin-right: -50px;
+  margin-top: -50px;
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -14,7 +20,7 @@
   }
 
   img {
-    width: 500px;
+    width: 700px;
     /* margin: 10px; */
   }
 }
