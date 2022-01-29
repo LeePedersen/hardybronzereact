@@ -1,16 +1,14 @@
 @media only screen and (max-width: 768px) {
   img {
-    width: 90%;
-    padding: 20px;
+    width: 100%;
+    /* padding: 20px; */
     /* margin: 10px; */
   }
 }
 
 img {
   /* border: 1px solid black; */
-  margin-left: -50px;
-  margin-right: -50px;
-  margin-top: -50px;
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -21,6 +19,9 @@ img {
 
   img {
     width: 700px;
+    margin-left: -50px;
+    margin-right: -50px;
+    margin-top: -50px;
     /* margin: 10px; */
   }
 }
