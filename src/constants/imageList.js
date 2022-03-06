@@ -44,7 +44,7 @@ import tillcoyote03 from '../img/tillcoyote03.jpg';
 export const imageList = [
   {
     src: bronze16,
-    alt: "bronze16",
+    alt: "Ode to a Ditchrider",
     length: null,
     width: null,
     depth: null,
@@ -52,7 +52,7 @@ export const imageList = [
     moreImages: [
       {
         src: bronze16extra1,
-        alt: "bronze16extra1",
+        alt: "Ode to a Ditchrider second picture",
         length: null,
         width: null,
         depth: null,
@@ -62,7 +62,7 @@ export const imageList = [
   },
   {
     src: bronze18,
-    alt: "bronze18",
+    alt: "Sober",
     length: null,
     width: null,
     depth: null,
@@ -70,7 +70,7 @@ export const imageList = [
     moreImages: [
       {
         src: bronze18extra1,
-        alt: "bronze18extra1",
+        alt: "Sober second picture",
         length: null,
         width: null,
         depth: null,
@@ -80,7 +80,7 @@ export const imageList = [
   },
   {
     src: bronze23,
-    alt: "bronze23",
+    alt: "An Alpine Idyll, an Homage",
     length: null,
     width: null,
     depth: null,
@@ -88,7 +88,7 @@ export const imageList = [
     moreImages: [
       {
         src: bronze23extra1,
-        alt: "bronze23extra1",
+        alt: "An Alpine Idyll, an Homage second picture",
         length: null,
         width: null,
         depth: null,
@@ -96,7 +96,7 @@ export const imageList = [
       },
       {
         src: bronze23extra2,
-        alt: "bronze23extra2",
+        alt: "An Alpine Idyll, an Homage third picture",
         length: null,
         width: null,
         depth: null,
@@ -185,7 +185,7 @@ export const imageList = [
   },
   {
     src: tillcoyote02,
-    alt: "tillcoyote02",
+    alt: "Let er Buck",
     length: null,
     width: null,
     depth: null,
@@ -193,7 +193,7 @@ export const imageList = [
     moreImages: [
       {
         src: tillcoyote,
-        alt: "tillcoyote",
+        alt: "Let er Buck second picture",
         length: null,
         width: null,
         depth: null,
@@ -201,7 +201,7 @@ export const imageList = [
       },
       {
         src: tillcoyote03,
-        alt: "tillcoyote03",
+        alt: "Let er Buck third picture",
         length: null,
         width: null,
         depth: null,
@@ -209,7 +209,7 @@ export const imageList = [
       },
       {
         src: tillcoyoteextra1,
-        alt: "tillcoyoteextra1",
+        alt: "Let er Buck fourth picture",
         length: null,
         width: null,
         depth: null,
@@ -217,7 +217,7 @@ export const imageList = [
       },
       {
         src: tillcoyoteextra2,
-        alt: "tillcoyoteextra2",
+        alt: "Let er Buck fifth picture",
         length: null,
         width: null,
         depth: null,

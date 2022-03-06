@@ -1,12 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../css/viewImage.css';
 
 function ViewImage(props) {
   const image = props.location.state.staticContext;
+  const [imgClassName, setClassName] = useState("image");
+  console.log(imgClassName);
   return (
     <div className="imageContainer">
       <div className="column">
-        <img className="image" src={image.src} alt={image.alt}/>
+        <img className={imgClassName} onClick={() => setClassName("imageClicked")} src={image.src} alt={image.alt}/>
       {image.moreImages &&
         image.moreImages.map(image => (
           <img className="image" src={image.src} alt={image.alt}/>
