@@ -25,5 +25,3 @@ function ViewImage(props) {
 }
 
 export default ViewImage;
-
-
