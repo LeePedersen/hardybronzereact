@@ -19,21 +19,24 @@ import bronze13 from '../img/bronze13.jpg';
 import bronze14 from '../img/bronze14.jpg';
 import bronze15 from '../img/bronze15.jpg';
 import bronze16 from '../img/bronze16.jpg';
-import bronze17 from '../img/bronze17.jpg';
+import bronze23extra1 from '../img/bronze23extra1.jpg';
 import bronze18 from '../img/bronze18.jpeg';
 import bronze16extra1 from '../img/bronze16extra1.jpeg';
 import bronze20 from '../img/bronze20.jpeg';
 import bronze21 from '../img/bronze21.jpeg';
-import bronze22 from '../img/bronze22.jpeg';
+import tillcoyoteextra1 from '../img/tillcoyoteextra1.jpeg';
 import bronze23 from '../img/bronze23.jpeg';
-import bronze24 from '../img/bronze24.jpeg';
-import bronze25 from '../img/bronze25.jpeg';
-import bronze26 from '../img/bronze26.jpg';
+import bronze18extra1 from '../img/bronze18extra1.jpeg';
+import tillcoyoteextra2 from '../img/tillcoyoteextra2.jpeg';
+import bronze23extra2 from '../img/bronze23extra2.jpg';
 import bronzeelk from '../img/bronzeelk.jpg';
 import bronzehardypatches from '../img/bronzehardypatches.jpeg';
 import bronzemultiple01 from '../img/bronzemultiple01.jpg';
 import bronzework01 from '../img/bronzework01.jpg';
 import bronzework02 from '../img/bronzework02.jpg';
+import tillcoyote02 from '../img/tillcoyote02.jpg';
+import tillcoyote from '../img/tillcoyote.jpg';
+import tillcoyote03 from '../img/tillcoyote03.jpg';
 
 
 
@@ -58,28 +61,22 @@ export const imageList = [
     ]
   },
   {
-    src: bronze17,
-    alt: "bronze17",
-    length: null,
-    width: null,
-    depth: null,
-    description: "this is a description of the image",
-  },
-  {
     src: bronze18,
     alt: "bronze18",
     length: null,
     width: null,
     depth: null,
     description: "this is a description of the image",
-  },
-  {
-    src: bronze20,
-    alt: "bronze20",
-    length: null,
-    width: null,
-    depth: null,
-    description: "this is a description of the image",
+    moreImages: [
+      {
+        src: bronze18extra1,
+        alt: "bronze18extra1",
+        length: null,
+        width: null,
+        depth: null,
+        description: "this is a description of the image",
+      },
+    ]
   },
   {
     src: bronze21,
@@ -90,12 +87,46 @@ export const imageList = [
     description: "this is a description of the image",
   },
   {
-    src: bronze22,
-    alt: "bronze22",
+    src: tillcoyote02,
+    alt: "tillcoyote02",
     length: null,
     width: null,
     depth: null,
     description: "this is a description of the image",
+    moreImages: [
+      {
+        src: tillcoyote,
+        alt: "tillcoyote",
+        length: null,
+        width: null,
+        depth: null,
+        description: "this is a description of the image",
+      },
+      {
+        src: tillcoyote03,
+        alt: "tillcoyote03",
+        length: null,
+        width: null,
+        depth: null,
+        description: "this is a description of the image",
+      },
+      {
+        src: tillcoyoteextra1,
+        alt: "tillcoyoteextra1",
+        length: null,
+        width: null,
+        depth: null,
+        description: "this is a description of the image",
+      },
+      {
+        src: tillcoyoteextra2,
+        alt: "tillcoyoteextra2",
+        length: null,
+        width: null,
+        depth: null,
+        description: "this is a description of the image",
+      },
+    ]
   },
   {
     src: bronze23,
@@ -104,26 +135,59 @@ export const imageList = [
     width: null,
     depth: null,
     description: "this is a description of the image",
+    moreImages: [
+      {
+        src: bronze23extra1,
+        alt: "bronze23extra1",
+        length: null,
+        width: null,
+        depth: null,
+        description: "this is a description of the image",
+      },
+      {
+        src: bronze23extra2,
+        alt: "bronze23extra2",
+        length: null,
+        width: null,
+        depth: null,
+        description: "this is a description of the image",
+      },  
+    ]
   },
   {
-    src: bronze24,
-    alt: "bronze24",
+    src: bronzework01,
+    alt: "bronzework01",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },  {
+    src: bronzework02,
+    alt: "bronzework02",
     length: null,
     width: null,
     depth: null,
     description: "this is a description of the image",
   },
   {
-    src: bronze25,
-    alt: "bronze25",
+    src: bronzeelk,
+    alt: "bronzeelk",
     length: null,
     width: null,
     depth: null,
     description: "this is a description of the image",
   },
   {
-    src: bronze26,
-    alt: "bronze26",
+    src: bronzehardypatches,
+    alt: "bronzehardypatches",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze20,
+    alt: "bronze20",
     length: null,
     width: null,
     depth: null,

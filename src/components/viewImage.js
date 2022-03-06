@@ -7,14 +7,10 @@ function ViewImage(props) {
     <div className="imageContainer">
       <div className="column">
         <img className="image" src={image.src} alt={image.alt}/>
-      {image.moreImages ?
-        <img className="image" src={image.src} alt={image.alt}/>
-        // image.moreImages.forEach(image => {
-        //   <img className="image" src={image.src} alt={image.alt}/>
-        //   console.log(image.alt)
-        // }) 
-       
-   : null
+      {image.moreImages &&
+        image.moreImages.map(image => (
+          <img className="image" src={image.src} alt={image.alt}/>
+        ))
       }
       </div>
       <div className="column2">
