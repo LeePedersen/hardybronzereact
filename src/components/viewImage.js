@@ -7,6 +7,15 @@ function ViewImage(props) {
     <div className="imageContainer">
       <div className="column">
         <img className="image" src={image.src} alt={image.alt}/>
+      {image.moreImages ?
+        <img className="image" src={image.src} alt={image.alt}/>
+        // image.moreImages.forEach(image => {
+        //   <img className="image" src={image.src} alt={image.alt}/>
+        //   console.log(image.alt)
+        // }) 
+       
+   : null
+      }
       </div>
       <div className="column2">
         <h1>{image.alt}</h1>
@@ -20,3 +29,5 @@ function ViewImage(props) {
 }
 
 export default ViewImage;
+
+

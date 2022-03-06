@@ -30,7 +30,8 @@ class Menu extends React.Component {
     // if menu is visible, return map of images, else return the menu icon component
     return (
       <div className="menu">
-        <h1 className="menuNameHeader">Hardy Izard</h1>
+        <h1
+        className="menuNameHeader">Hardy Izard</h1>
         {this.state.menuVisible ?
           <div className="menuList">
             <List disablePadding onClick={() => this.toggleMenu()}>

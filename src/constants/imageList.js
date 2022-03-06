@@ -18,10 +18,117 @@ import bronze12 from '../img/bronze12.jpg';
 import bronze13 from '../img/bronze13.jpg';
 import bronze14 from '../img/bronze14.jpg';
 import bronze15 from '../img/bronze15.jpg';
+import bronze16 from '../img/bronze16.jpg';
+import bronze17 from '../img/bronze17.jpg';
+import bronze18 from '../img/bronze18.jpeg';
+import bronze16extra1 from '../img/bronze16extra1.jpeg';
+import bronze20 from '../img/bronze20.jpeg';
+import bronze21 from '../img/bronze21.jpeg';
+import bronze22 from '../img/bronze22.jpeg';
+import bronze23 from '../img/bronze23.jpeg';
+import bronze24 from '../img/bronze24.jpeg';
+import bronze25 from '../img/bronze25.jpeg';
+import bronze26 from '../img/bronze26.jpg';
+import bronzeelk from '../img/bronzeelk.jpg';
+import bronzehardypatches from '../img/bronzehardypatches.jpeg';
+import bronzemultiple01 from '../img/bronzemultiple01.jpg';
+import bronzework01 from '../img/bronzework01.jpg';
+import bronzework02 from '../img/bronzework02.jpg';
+
 
 
 
 export const imageList = [
+  {
+    src: bronze16,
+    alt: "bronze16",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+    moreImages: [
+      {
+        src: bronze16extra1,
+        alt: "bronze16extra1",
+        length: null,
+        width: null,
+        depth: null,
+        description: "this is a description of the image",
+      },
+    ]
+  },
+  {
+    src: bronze17,
+    alt: "bronze17",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze18,
+    alt: "bronze18",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze20,
+    alt: "bronze20",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze21,
+    alt: "bronze21",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze22,
+    alt: "bronze22",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze23,
+    alt: "bronze23",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze24,
+    alt: "bronze24",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze25,
+    alt: "bronze25",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze26,
+    alt: "bronze26",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
   {
     src: bronze01,
     alt: "Unsung",
@@ -142,5 +249,8 @@ export const imageList = [
     depth: "6",
     description: "this is a description of the image",
   },
+
+
+
 
 ]
