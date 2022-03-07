@@ -15,11 +15,9 @@ class ViewImage extends React.Component {
     console.log(this.state);
     // toggle image classname on click
     if (this.state.imgClassName == "image") {
-      console.log("this is the state when it says it's image:", this.state.imgClassName);
-      this.setState({imgClassName: "imageClicked"}, () => { console.log("this is the state after set to imageClicked: ", this.state.imgClassName)});
+      this.setState({imgClassName: "imageClicked"});
     } else {
-      (console.log("hit else statement, state is: ", this.state.imgClassName))
-      this.setState({imgClassName: "image"}, () => { console.log("this is the state when you hit the else statement and set it to 'image': ", this.state.imgClassName)});
+      this.setState({imgClassName: "image"});
     }
   }
 
@@ -27,10 +25,12 @@ class ViewImage extends React.Component {
     return (
       <div className="imageContainer">
         <div className="column">
-          <img className={this.state.imgClassName} onClick={() => this.toggleImgClassName()} src={this.state.image.src} alt={this.state.image.alt}/>
+          <div className={this.state.imgClassName}>
+            <img className="imageInDiv" onClick={() => this.toggleImgClassName()} src={this.state.image.src} alt={this.state.image.alt}/>
+          </div>
         {this.state.image.moreImages &&
           this.state.image.moreImages.map(image => (
-            <img className="image" src={this.state.image.src} alt={this.state.image.alt}/>
+            <img className="image" src={image.src} alt={image.alt}/>
           ))
         }
         </div>

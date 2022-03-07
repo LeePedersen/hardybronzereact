@@ -14,7 +14,7 @@ function Sculpture() {
         <div className="column">
           {column1list.map((image, index) =>
             <>
-              <Link key={index} to={{ pathname: "viewImage", state: { staticContext: column1list[index] }}}><img src={column1list[index].src} alt={column1list[index].alt}/></Link>
+              <Link key={index} to={{ pathname: "viewImage", state: { staticContext: column1list[index] }}}><img className="sculptureImage" src={column1list[index].src} alt={column1list[index].alt}/></Link>
               <p className="description">{image.alt} <br/> l = {image.length}" <br/> w = {image.width}" <br/> d = {image.depth}"</p>
             </>
           )}
@@ -22,7 +22,7 @@ function Sculpture() {
         <div className="column">
           {column2list.map((image, index) =>
             <>
-              <Link key={index} to={{ pathname: "viewImage", state: { staticContext: column2list[index] }}}><img src={column2list[index].src} alt={column2list[index].alt}/></Link>
+              <Link key={index} to={{ pathname: "viewImage", state: { staticContext: column2list[index] }}}><img className="sculptureImage" src={column2list[index].src} alt={column2list[index].alt}/></Link>
               <p className="description">{image.alt} <br/> l = {image.length}" <br/> w = {image.width}" <br/> d = {image.depth}"</p>
             </>
           )}

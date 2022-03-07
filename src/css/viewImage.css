@@ -17,6 +17,13 @@
     position: fixed;
     top: 0;
     left: 0;
+    backdrop-filter: blur(4px);
+    /* align-self: center; */
+  }
+
+  .imageInDiv {
+    max-width: 100%;
+    height: 100%
   }
 
   .column {
