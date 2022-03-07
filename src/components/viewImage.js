@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../css/viewImage.css';
 
 class ViewImage extends React.Component {
@@ -6,19 +6,20 @@ class ViewImage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      image: props.location.state.staticContext
+      image: props.location.state.staticContext,
+      imgClassName: "image",
     }
-    const [imgClassName, setClassName] = useState("image")
   }
 
-
   toggleImgClassName() {
+    console.log(this.state);
     // toggle image classname on click
-    if (this.imgClassName = "image") {
-      this.setClassName("imageClicked")
-      console.log(this.imgClassName);
+    if (this.state.imgClassName == "image") {
+      console.log("this is the state when it says it's image:", this.state.imgClassName);
+      this.setState({imgClassName: "imageClicked"}, () => { console.log("this is the state after set to imageClicked: ", this.state.imgClassName)});
     } else {
-      this.setClassName("image")
+      (console.log("hit else statement, state is: ", this.state.imgClassName))
+      this.setState({imgClassName: "image"}, () => { console.log("this is the state when you hit the else statement and set it to 'image': ", this.state.imgClassName)});
     }
   }
 
