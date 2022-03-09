@@ -11,10 +11,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * `HTML`
 
 ## Known Bugs
-* images are old and not styled well yet
+* images are not styled well yet
 * viewImage page description jumps out when page is full screen
 * error when refreshing viewImage page
-
+* toggle image class function has bugs
 
 ## Support and Contact Details
 _For issues contact [Lee](https://github.com/LeePedersen)_

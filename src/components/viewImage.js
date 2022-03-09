@@ -25,12 +25,12 @@ class ViewImage extends React.Component {
     return (
       <div className="imageContainer">
         <div className="column">
-          <div className={this.state.imgClassName}>
-            <img className="imageInDiv" onClick={() => this.toggleImgClassName()} src={this.state.image.src} alt={this.state.image.alt}/>
+          <div className={this.state.imgClassName} onClick={() => this.toggleImgClassName()} >
+            <img className="imageInDiv" src={this.state.image.src} alt={this.state.image.alt}/>
           </div>
         {this.state.image.moreImages &&
           this.state.image.moreImages.map(image => (
-            <img className="image" src={image.src} alt={image.alt}/>
+            <img className="image" onClick={() => this.toggleImgClassName()} src={image.src} alt={image.alt}/>
           ))
         }
         </div>

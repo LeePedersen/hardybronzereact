@@ -6,7 +6,6 @@ import twoweekspay from '../img/2weekspay.jpeg';
 import bronze01 from '../img/bronze01.jpg';
 import bronze02 from '../img/bronze02.jpg';
 import bronze03 from '../img/bronze03.jpg';
-import bronze04 from '../img/bronze04.jpg';
 import bronze05 from '../img/bronze05.jpg';
 import bronze06 from '../img/bronze06.jpg';
 import bronze07 from '../img/bronze07.jpg';
@@ -37,6 +36,8 @@ import bronzework02 from '../img/bronzework02.jpg';
 import tillcoyote02 from '../img/tillcoyote02.jpg';
 import tillcoyote from '../img/tillcoyote.jpg';
 import tillcoyote03 from '../img/tillcoyote03.jpg';
+import elkspear from '../img/elkspear.jpg';
+
 
 
 
@@ -168,7 +169,7 @@ export const imageList = [
     description: "this is a description of the image",
   },
   {
-    src: bronze04,
+    src: twoweekspay,
     alt: "Two Weeks Pay",
     length: "10",
     width: "6",
@@ -224,6 +225,14 @@ export const imageList = [
         description: "this is a description of the image",
       },
     ]
+  },
+  {
+    src: bronze02,
+    alt: "Ride",
+    length: "68",
+    width: "10",
+    depth: "12",
+    description: "this is a description of the image",
   },
   {
     src: bronze21,
