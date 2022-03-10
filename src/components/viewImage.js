@@ -7,17 +7,21 @@ class ViewImage extends React.Component {
     super(props);
     this.state = {
       image: props.location.state.staticContext,
-      imgClassName: "image",
+      imgClassName: "invisible",
+      imgClickedSrc: null,
     }
   }
 
-  toggleImgClassName() {
-    console.log(this.state);
+  toggleViewImage(source) {
+    // console.log(this.state);
+    console.log(source); // should be null, hmm
     // toggle image classname on click
-    if (this.state.imgClassName == "image") {
+    if (this.state.imgClassName == "invisible") {
+      this.setState({imgClickedSrc: source});
       this.setState({imgClassName: "imageClicked"});
     } else {
-      this.setState({imgClassName: "image"});
+      this.setState({imgClickedSrc: null});
+      this.setState({imgClassName: "invisible"});
     }
   }
 
@@ -25,12 +29,12 @@ class ViewImage extends React.Component {
     return (
       <div className="imageContainer">
         <div className="column">
-          <div className={this.state.imgClassName} onClick={() => this.toggleImgClassName()} >
-            <img className="imageInDiv" src={this.state.image.src} alt={this.state.image.alt}/>
+          <div className="image" >
+            <img className="imageInDiv" onClick={() => this.toggleViewImage(this.state.image.src)} src={this.state.image.src} alt={this.state.image.alt}/>
           </div>
         {this.state.image.moreImages &&
           this.state.image.moreImages.map(image => (
-            <img className="image" onClick={() => this.toggleImgClassName()} src={image.src} alt={image.alt}/>
+            <img className="image" onClick={() => this.toggleViewImage(image.src)} src={image.src} alt={image.alt}/>
           ))
         }
         </div>
@@ -41,6 +45,10 @@ class ViewImage extends React.Component {
           <p>D = {this.state.image.depth}"</p>
           <p className="description">{this.state.image.description}</p>
         </div>
+        <div className={this.state.imgClassName} >
+            <img className="imageInDiv" onClick={() => this.toggleViewImage()} src={this.state.imgClickedSrc} alt={this.state.image.alt}/>
+        </div>
+
       </div>
     )
   }

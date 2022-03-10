@@ -23,6 +23,10 @@
     display: flex;
   }
 
+  .invisible {
+    display: none;
+  }
+
   .imageInDiv {
     
     max-width: 100%;
