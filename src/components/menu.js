@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import '../css/menu.css';
-import { SiInstagram } from "react-icons/si";
+// import { SiInstagram } from "react-icons/si";
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import MenuIcon from "./menuIcon";
@@ -40,9 +40,6 @@ class Menu extends React.Component {
                 <Link className="link" to={linkTo}><p className="labelText">{label}</p></Link>
                 </ListItem>
               ))}
-              <ListItem>
-                <p className="labelText"><SiInstagram/></p>
-              </ListItem>
             </List>
             <p className="x" onClick={() => this.toggleMenu()}>X</p>
           </div>

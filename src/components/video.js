@@ -1,11 +1,13 @@
 import React from "react";
+import PageHeader from './page-header';
 import '../css/video.css';
 
 function Video() {
   return (
-    <div className="videoText">
-      <p>Nothing here yet</p>
-    </div>
+    <>
+      <PageHeader title={"Videos"} />
+      <p className="videoText">Nothing here yet</p>
+    </>
   );
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import PageHeader from './page-header'
+import PageHeader from './page-header';
 import '../css/contact.css';
 
 

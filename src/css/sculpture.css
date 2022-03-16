@@ -1,8 +1,9 @@
 @media only screen and (max-width: 768px) {
-  img {
+  .sculptureImage {
     max-width: 90%;
     /* max-height: 100%; */
     /* padding: 20px; */
+    /* todo: center this */
     margin: 10px;
   }
 
