@@ -8,6 +8,7 @@ import bronze02 from '../img/bronze02.jpg';
 import bronze03 from '../img/bronze03.jpg';
 import bronze05 from '../img/bronze05.jpg';
 import bronze06 from '../img/bronze06.jpg';
+import bronze06extra1 from '../img/bronze06extra1.jpg';
 import bronze07 from '../img/bronze07.jpg';
 import bronze08 from '../img/bronze08.jpg';
 import bronze09 from '../img/bronze09.jpg';
@@ -29,7 +30,7 @@ import bronze18extra1 from '../img/bronze18extra1.jpeg';
 import tillcoyoteextra2 from '../img/tillcoyoteextra2.jpeg';
 import bronze23extra2 from '../img/bronze23extra2.jpg';
 import bronzeelk from '../img/bronzeelk.jpg';
-import bronzehardypatches from '../img/bronzehardypatches.jpeg';
+// import bronzehardypatches from '../img/bronzehardypatches.jpeg';
 import bronzemultiple01 from '../img/bronzemultiple01.jpg';
 import bronzework01 from '../img/bronzework01.jpg';
 import bronzework02 from '../img/bronzework02.jpg';
@@ -123,14 +124,6 @@ export const imageList = [
   {
     src: bronzeelk,
     alt: "bronzeelk",
-    length: null,
-    width: null,
-    depth: null,
-    description: "this is a description of the image",
-  },
-  {
-    src: bronzehardypatches,
-    alt: "bronzehardypatches",
     length: null,
     width: null,
     depth: null,
@@ -249,6 +242,16 @@ export const imageList = [
     width: "5",
     depth: "7",
     description: "this is a description of the image",
+    moreImages: [
+      {
+        src: bronze06extra1,
+        alt: "bronze06extra1",
+        length: null,
+        width: null,
+        depth: null,
+        description: "this is a description of the image",
+      },
+    ]
   },
   {
     src: bronze07,
@@ -269,14 +272,6 @@ export const imageList = [
   {
     src: bronze09,
     alt: "Cow Elk #2",
-    length: "16",
-    width: "9",
-    depth: "6",
-    description: "this is a description of the image",
-  },
-  {
-    src: bronze10,
-    alt: "Cow Elk #3",
     length: "16",
     width: "9",
     depth: "6",

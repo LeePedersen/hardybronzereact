@@ -11,7 +11,7 @@ function Sculpture() {
     <>
       <PageHeader title={"Sculpture"}/>
       <div className="Sculpture">
-        <div className="column">
+        <div className="sColumn">
           {column1list.map((image, index) =>
             <>
               <Link key={index} to={{ pathname: "viewImage", state: { staticContext: column1list[index] }}}><img className="sculptureImage" src={column1list[index].src} alt={column1list[index].alt}/></Link>
@@ -19,7 +19,7 @@ function Sculpture() {
             </>
           )}
         </div>
-        <div className="column">
+        <div className="sColumn">
           {column2list.map((image, index) =>
             <>
               <Link key={index} to={{ pathname: "viewImage", state: { staticContext: column2list[index] }}}><img className="sculptureImage" src={column2list[index].src} alt={column2list[index].alt}/></Link>

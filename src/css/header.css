@@ -7,15 +7,17 @@
   margin-left: 40px;
 }
 
-.instagram {
+/* .instagram {
   margin-top: 30px;
-}
+} */
 
 .headerLink {
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-top: 30px;
   text-decoration: none;
   color: black;
+  font-size: 20px;
 }
 
 .greyed {

@@ -14,7 +14,7 @@ class ViewImage extends React.Component {
 
   toggleViewImage(source) {
     if (this.state.imgClassName == "invisible") {
-      this.setState({imgClassName: "imageClicked", imgClickedSrc: source});
+      this.setState({imgClassName: "imageClickedDiv", imgClickedSrc: source});
     } else {
       this.setState({imgClassName: "invisible", imgClickedSrc: null});
     }
@@ -24,7 +24,7 @@ class ViewImage extends React.Component {
     return (
 
       <div className="imageContainer">
-        <div className="column">
+        <div className="viColumn">
           <img className="image" onClick={() => this.toggleViewImage(this.state.image.src)} src={this.state.image.src} alt={this.state.image.alt}/>
           {this.state.image.moreImages &&
             this.state.image.moreImages.map(image => (
@@ -33,16 +33,16 @@ class ViewImage extends React.Component {
           }
         </div>
 
-        <div className="column2">
+        <div className="viColumn2">
           <h1>{this.state.image.alt}</h1>
           <p>L = {this.state.image.length}"</p>
           <p>W = {this.state.image.width}"</p>
           <p>D = {this.state.image.depth}"</p>
-          <p className="description">{this.state.image.description}</p>
+          <p className="viewDescription">{this.state.image.description}</p>
         </div>
 
         <div className={this.state.imgClassName} onClick={() => this.toggleViewImage()}>
-            <img className="image" src={this.state.imgClickedSrc} alt={this.state.image.alt}/>
+            <img className="imageClicked" src={this.state.imgClickedSrc} alt={this.state.image.alt}/>
         </div>
 
       </div>
