@@ -31,7 +31,7 @@ class Menu extends React.Component {
     return (
       <div className="menu">
         <h1
-        className="menuNameHeader">Hardy Izard</h1>
+        className="menuNameHeader">HForrest</h1>
         {this.state.menuVisible ?
           <div className="menuList">
             <List disablePadding onClick={() => this.toggleMenu()}>

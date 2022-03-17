@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <div className="header">
-      <h1 className="nameHeader">Hardy Forrest</h1>
+      <h1 className="nameHeader">HForrest</h1>
       <p className="headerLink"><Link to="/">Sculpture</Link></p>
       <p className="headerLink"><Link to="About">About</Link></p>
       <p className="headerLink"><Link to="Video">Videos</Link></p>
