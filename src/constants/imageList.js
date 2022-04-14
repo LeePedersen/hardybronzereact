@@ -38,9 +38,21 @@ import tillcoyote02 from '../img/tillcoyote02.jpg';
 import tillcoyote from '../img/tillcoyote.jpg';
 import tillcoyote03 from '../img/tillcoyote03.jpg';
 import elkspear from '../img/elkspear.jpg';
-
-
-
+import bronze24 from '../img/bronze24.jpg';
+import bronze25 from '../img/bronze25.jpg';
+import bronze31 from '../img/bronze31.jpg';
+import bronze32 from '../img/bronze32.jpg';
+import bronze33 from '../img/bronze33.jpg';
+import bronze34 from '../img/bronze34.jpg';
+import bronze35 from '../img/bronze35.jpg';
+import bronze36 from '../img/bronze36.jpg';
+import bronze37 from '../img/bronze37.jpg';
+import bronze38 from '../img/bronze38.jpg';
+import bronze39 from '../img/bronze39.jpg';
+import bronze40 from '../img/bronze40.jpg';
+import bronze41 from '../img/bronze41.jpg';
+import bronze42 from '../img/bronze42.jpg';
+import bronze43 from '../img/bronze43.jpg';
 
 
 export const imageList = [
@@ -282,8 +294,124 @@ export const imageList = [
     depth: "6",
     description: "this is a description of the image",
   },
-
-
-
-
+  {
+    src: bronze24,
+    alt: "bronze24",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze25,
+    alt: "bronze25",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze31,
+    alt: "bronze31",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze32,
+    alt: "bronze32",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze33,
+    alt: "bronze33",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze34,
+    alt: "bronze34",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze35,
+    alt: "bronze35",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze36,
+    alt: "bronze36",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze37,
+    alt: "bronze37",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze38,
+    alt: "bronze38",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze39,
+    alt: "bronze39",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze40,
+    alt: "bronze40",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze41,
+    alt: "bronze41",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze42,
+    alt: "bronze42",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
+  {
+    src: bronze43,
+    alt: "bronze43",
+    length: null,
+    width: null,
+    depth: null,
+    description: "this is a description of the image",
+  },
 ]
