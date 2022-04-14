@@ -39,7 +39,7 @@ import tillcoyote from '../img/tillcoyote.jpg';
 import tillcoyote03 from '../img/tillcoyote03.jpg';
 import elkspear from '../img/elkspear.jpg';
 import bronze24 from '../img/bronze24.jpg';
-import bronze25 from '../img/bronze25.jpg';
+import bronze25 from '../img/bronze25.jpeg';
 import bronze31 from '../img/bronze31.jpg';
 import bronze32 from '../img/bronze32.jpg';
 import bronze33 from '../img/bronze33.jpg';

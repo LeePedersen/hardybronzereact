@@ -4,9 +4,12 @@ import { Link } from 'react-router-dom';
 import { imageList } from '../constants/imageList';
 
 function Sculpture() {
-  const halfway = Math.ceil(imageList.length);
-  const column1list = imageList.slice(0, halfway / 2);
-  const column2list = imageList.slice(halfway / 2);
+  const halfway = Math.ceil(imageList.length / 2);
+  const column1list = imageList.slice(0, halfway);
+  console.log(column1list.length);
+  const column2list = imageList.slice(halfway);
+  console.log(column2list.length);
+
   return (
     <>
       <PageHeader title={"Sculpture"}/>
