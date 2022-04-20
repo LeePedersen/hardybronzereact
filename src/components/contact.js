@@ -7,7 +7,8 @@ function Contact() {
   return (
     <>
       <PageHeader title={"Contact"} />
-      <p className="contactInfo">Email me at lkfdsajlkjfdsalkfjda</p>
+      <p className="contactInfo">Email: hardyizard@gmail.com</p>
+      <p className="contactInfo">Phone: 970-210-1638</p>
     </>
   );
 }
