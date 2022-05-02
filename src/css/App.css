@@ -1,6 +1,9 @@
+body {
+  background-image: url(../img/paperbackground.jpeg);
+  background-attachment: fixed;
+}
+
 .background {
-  /* font-family: 'Play', sans-serif;
-  font-variant-caps: small-caps; */
 }
 
 a {
