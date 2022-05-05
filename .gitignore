@@ -24,3 +24,5 @@ yarn-error.log*
 
 githubToken.txt
 todo.txt
+sitemap-generator.js
+sitemap-routes.js
