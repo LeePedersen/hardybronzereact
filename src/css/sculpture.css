@@ -1,6 +1,7 @@
 .sColumn {
   text-align: center;
   /* min-height: 100%; */
+  margin-bottom: 60px;
 }
 
 .sculptureImage {
@@ -9,6 +10,7 @@
 
 .Sculpture {
   /* min-height: 100%; */
+  margin-bottom: 200px;
 }
 
 @media only screen and (max-width: 768px) {
