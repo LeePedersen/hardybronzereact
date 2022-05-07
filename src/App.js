@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/App.css';
 import Header from './components/header';
+import Footer from './components/footer';
 import Menu from './components/menu';
 import Sculpture from './components/sculpture';
 import About from './components/about';
@@ -47,6 +48,7 @@ class App extends React.Component {
           <Route path='/viewImage' component={ViewImage} />
           <Route component={Error404} />
         </Switch>
+        <Footer />
       </div>
     );
 

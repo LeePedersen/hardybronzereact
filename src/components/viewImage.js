@@ -13,7 +13,7 @@ class ViewImage extends React.Component {
   }
 
   toggleViewImage(source) {
-    if (this.state.imgClassName == "invisible") {
+    if (this.state.imgClassName === "invisible") {
       this.setState({imgClassName: "imageClickedDiv", imgClickedSrc: source});
     } else {
       this.setState({imgClassName: "invisible", imgClickedSrc: null});

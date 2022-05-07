@@ -3,6 +3,7 @@
     .videoText {
       margin-left: 300px;
       margin-right: 100px;
+      min-height: 100%;
     }
   }
   
