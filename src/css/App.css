@@ -3,12 +3,12 @@
   min-height: 100%;
 } */
 
-html, #root, .App {
+/* html, #root, .App {
   min-height: 100%;
-}
+} */
 
 body {
-  min-height: 100%; 
+  height: inherit;
 }
 
 /* .background, #root {
