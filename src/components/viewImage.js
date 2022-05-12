@@ -34,7 +34,7 @@ class ViewImage extends React.Component {
         </div>
 
         <div className="viColumn2">
-          <h1>{this.state.image.alt}</h1>
+          <h1>{this.state.image.title}</h1>
           <p>L = {this.state.image.length}"</p>
           <p>W = {this.state.image.width}"</p>
           <p>D = {this.state.image.depth}"</p>

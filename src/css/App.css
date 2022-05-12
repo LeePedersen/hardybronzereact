@@ -1,46 +1,35 @@
-
-/* html {
-  min-height: 100%;
-} */
-
-/* html, #root, .App {
-  min-height: 100%;
-} */
-
-body {
-  height: inherit;
-}
-
-/* .background, #root {
-  min-height: 100%;
-} */
-
-
-main {
-  min-height: 100%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
 a {
   text-decoration: none;
   color: black;
 }
 
-@media only screen and (min-width: 768px) {
-
-  body {
-    background-image: url(../img/paperbackground.jpeg);
-    background-attachment: fixed;
-  }
-
+html {
+  min-height: 100%;
 }
 
-@media only screen and (max-width: 768px) {
-
-  body {
-    background-image: url(../img/paperbackground.jpeg);
-    background-attachment: fixed;
-  }
-
+body {
+  background-image: url(../img/paperbackground.jpeg);
+  background-attachment: fixed;
+  position: relative;
+  top: 0px;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
+#root {
+  min-height: 100vh;
+}
 
+.background {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: 'Play', sans-serif;
+  font-variant-caps: small-caps;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
