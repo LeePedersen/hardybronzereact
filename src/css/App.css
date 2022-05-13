@@ -5,31 +5,15 @@ a {
   color: black;
 }
 
-html {
+/* html {
   min-height: 100%;
-}
+} */
 
 body {
   background-image: url(../img/paperbackground.jpeg);
   background-attachment: fixed;
-  position: relative;
-  top: 0px;
-  min-height: 100vh;
-  min-width: 100vw;
-}
-
-#root {
-  min-height: 100vh;
-}
-
-.background {
-  min-height: 100vh;
-}
-
-body {
   margin: 0;
+  height: calc(100vh - 136px);
   font-family: 'Play', sans-serif;
   font-variant-caps: small-caps;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
